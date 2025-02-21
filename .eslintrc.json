@@ -1,15 +1,35 @@
 {
-  "extends": "airbnb-base",
-  "env": {
-     "es6": true,
-     "browser": true,
-     "jest": true
-  },
-  "rules": {
-    "no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
-    ]
-  }
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-restricted-syntax": [
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+        ],
+        "no-console": 0,
+        "max-len": [
+            "error",
+            { "code": 300 }
+        ],
+        "class-methods-use-this": 0,
+        "no-alert": 0,
+        "no-param-reassign": 0,
+        "no-useless-constructor": 0,
+        "prefer-template": 0,
+        "no-empty-function": [
+            "error",
+            { "allow": ["constructors"] }
+        ]
+    }
 }

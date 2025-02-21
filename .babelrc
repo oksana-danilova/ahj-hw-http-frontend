@@ -1,15 +1,11 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "useBuiltIns": "usage",
-        "corejs": 3,
-        "targets": {
-          "node": "current"
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3
         }
-      }
+      ]
     ]
-  ],
-  "plugins": ["@babel/plugin-proposal-class-properties"]
-}
+  }

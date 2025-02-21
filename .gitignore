@@ -1,6 +1,8 @@
-dist
-doc
 .idea
+Thumbs.db*
+.DS_Store*
+HELP.md
+doc
 
 # Logs
 logs
@@ -19,7 +21,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 
 # nyc test coverage
 .nyc_output
@@ -39,6 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+dist/
 
 # TypeScript v1 declaration files
 typings/
@@ -82,7 +85,3 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
-
-# Thumbnails
-Thumbs.db
-Thumbs.db:encryptable
