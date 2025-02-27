@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  line-height: 0;
+}
+
+button.add-ticket-button {
+  display: block;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  gap: 10px
+}
+
+.ticket-wrapper { 
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ticket-body {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 3rem;
+}
+
+.ticket-status {
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+
+.ticket-timestamp {  
+  margin-left: auto;
+}
+
+.ticket-edit-button {  
+  min-width: 2rem;
+  min-height: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-remove-button { 
+  min-width: 2rem;
+  min-height: 2rem; 
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-description {  
+  margin: 1rem 7rem 2rem 4rem;
+}
+
+.ticket-status:hover, .ticket-name:hover, .ticket-edit-button:hover, .ticket-remove-button:hover {
+  cursor: pointer;
+} 
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 520px;
+  height: 310px;
+  left: calc(50% - 260px);
+  top: calc(50% - 155px);
+  background-color: ghostwhite;
+}
+
+.widget-remove {
+  height: auto;
+}
+
+.widget-remove-text {
+  margin-bottom: 1rem;
+}
+
+.widget-add, .widget-edit, .widget-remove{
+width: 40%;
+padding: 1rem;
+}
+
+.widget-add h2, .widget-edit h2, .widget-remove h2 {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.widget-form {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.widget-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.widget-form-controls {
+  margin-left: auto;
+}
+
+.widget-button {
+padding: 0.5rem 1rem;
+border: 1px solid black;
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #07daf6;
+} 
+
+button[data-id=cancel] {
+  margin-right: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Медиа запросы */
+@media (max-width: 600px) {
+  .tickets-container {
+    padding: 1rem;
+  }
+
+  .modal {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tickets-container {
+    padding: 1rem;
+  }
+
+  .modal {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .modal {
+    width: 520px;
+    height: 310px;
+  }
+}
