@@ -12,7 +12,6 @@
   },
   "license": "ISC",
   "author": "oksana-danilova",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
